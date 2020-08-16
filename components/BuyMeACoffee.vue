@@ -3,7 +3,7 @@
     <a
       class="bmc-button"
       target="_blank"
-      href="https://www.buymeacoffee.com/coronatracker"
+      href="https://www.buymeacoffee.com/"
     >
       <img
         src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
@@ -23,7 +23,7 @@ export default {
         {
           src: "https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js",
           "data-name": "BMC-Widget",
-          "data-id": "coronatracker",
+          "data-id": "#",
           "data-description": "Support me on Buy me a coffee!",
           "data-message":
             "Thank you for visiting. You can now buy me a coffee!",
