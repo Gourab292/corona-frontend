@@ -7,7 +7,7 @@ let routes
 
 const localeContext = require("./utils/constants.js")
 const utils = require("./utils/generateRoutes.js")
-const baseUrl = process.env.BASE_URL || "https://www.coronatracker.com"
+const baseUrl = process.env.BASE_URL || "https://www.coronapandemic.in"
 
 const shouldGenerateRoutes = [undefined, "", "true"].includes(
   process.env.GENERATE_ROUTES
@@ -49,7 +49,7 @@ export default {
       {
         hid: "title",
         name: "title",
-        content: "Corona Tracker"
+        content: "Corona Pandemic Tracker"
       },
       {
         hid: "description",
@@ -63,7 +63,7 @@ export default {
       { property: "og:site_name", content: "Corona Tracker" },
       { property: "og:type", content: "website" },
       { hid: "og-url", property: "og:url", content: baseUrl },
-      { hid: "og-title", property: "og:title", content: "Corona Tracker" },
+      { hid: "og-title", property: "og:title", content: "Corona Pandemic Tracker" },
       {
         hid: "og-description",
         property: "og:description",
@@ -81,7 +81,7 @@ export default {
       {
         hid: "twitter-title",
         property: "twitter:title",
-        content: "Corona Tracker"
+        content: "Corona Pandemic Tracker"
       },
       {
         hid: "twitter-description",
