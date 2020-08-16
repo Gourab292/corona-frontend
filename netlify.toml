@@ -11,7 +11,7 @@
 
 [context.production.environment]
   API_BASE_URL = "https://api.coronatracker.com"
-  BASE_URL = "https://www.coronatracker.com"
+  BASE_URL = "https://www.coronapandemic.in"
   GENERATE_ROUTES = "true"
 
 # Environment variable overriden for staging branch
@@ -21,8 +21,8 @@
 
 [context.staging.environment]
   API_BASE_URL = "https://api.staging.coronatracker.com"
-  BASE_URL = "https://staging.coronatracker.com"
-  GA_ID = "UA-xxxxxxxxx-x"
+  BASE_URL = "https://staging.coronapandemic.in"
+  GA_ID = "UA-161766535-2"
   GENERATE_ROUTES = "true"
 
 # Environment variable overriden for dev branch
@@ -32,8 +32,8 @@
 
 [context.dev.environment]
   API_BASE_URL = "https://api.staging.coronatracker.com"
-  BASE_URL = "https://staging.coronatracker.com"
-  GA_ID = "UA-xxxxxxxxx-x"
+  BASE_URL = "https://staging.coronapandemic.in"
+  GA_ID = "UA-161766535-2"
   GENERATE_ROUTES = "false"
 
 # Environment variable overriden for "feature/netlify-function" branch
@@ -43,7 +43,7 @@
 
 [context."feature/netlify-function".environment]
   API_BASE_URL = "https://api.staging.coronatracker.com"
-  BASE_URL = "https://staging.coronatracker.com"
+  BASE_URL = "https://staging.coronapandemic.in"
   GA_ID = "UA-xxxxxxxxx-x"
   GENERATE_ROUTES = "false"
 
@@ -52,8 +52,8 @@
 [context.deploy-preview]
 [context.deploy-preview.environment]
   API_BASE_URL = "https://api.staging.coronatracker.com"
-  BASE_URL = "https://staging.coronatracker.com"
-  GA_ID = "UA-xxxxxxxxx-x"
+  BASE_URL = "https://staging.coronapandemic.in"
+  GA_ID = "UA-161766535-2"
   GENERATE_ROUTES = "false"
 
 # Environment variable overriden for branch deploys
@@ -62,27 +62,27 @@
 [context.branch-deploy]
 [context.branch-deploy.environment]
   API_BASE_URL = "https://api.staging.coronatracker.com"
-  BASE_URL = "https://staging.coronatracker.com"
-  GA_ID = "UA-xxxxxxxxx-x"
+  BASE_URL = "https://staging.coronapandemic.in"
+  GA_ID = "UA-161766535-2"
   GENERATE_ROUTES = "false"
 
 [[redirects]]
   from = "/blog"
-  to = "https://blog.coronatracker.com/blog/"
+  to = "https://blog.coronapandemic.in/blog/"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
 
 [[redirects]]
   from = "/blog/*/"
-  to = "https://blog.coronatracker.com/blog/:splat"
+  to = "https://blog.coronapandemic.in/blog/:splat"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
 
 [[redirects]]
   from = "/blog/*"
-  to = "https://blog.coronatracker.com/blog/:splat/"
+  to = "https://blog.coronapandemic.in/blog/:splat/"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
